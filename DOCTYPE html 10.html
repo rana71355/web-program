@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<tittle>Side Bar Example</tittle>
+<style>
+ .sidenav{
+   height:100%;
+   width:160px;
+   position: fixed;
+   top:0;
+   left:0;
+   background-color:green;
+   padding-top:20px;
+   }
+.sidenav a{
+   display:block;
+   text-decoration:none;
+   padding: 6px 8px 6px 16px;
+   color:white;
+   }
+.sidenav a:hover{
+   color:red;
+   }
+.main{
+   margin-left:160px;
+   padding:0px 10px;
+   height:2000px;
+   }
+.content{
+   display:none;
+   }
+.content:target{
+   display:block;
+   }
+</style>
+</head>
+<body>
+<div class="sidenav">
+<a href="#about">About Us</a>
+<a href="#department">Department</a>
+<a href="#vision">Vision & Mission</a>
+<a href="#contact">Contact Us</a>
+</div>
+<div class="main">
+<div id="about"class="content">
+  <h1>ABOUT US</h1>
+  <p>
+MEA Engineering College (MEAEC) is a private, AICTE-approved institution established in 2002 in Malappuram, Kerala, and affiliated with APJ Abdul Kalam Technological University. It offers NBA-accredited B.Tech, M.Tech, and MCA programs on a modern 25-acre campus known for its strong placement cell.</p>
+</div>
+<div id="department" class="content">
+<h1>Department</h1>
+<p><h1>B.Tech courses</h1>
+<ul>
+  <li>Civil Engineering</li>
+  <li>Computer Science & Engineering(CSE)</li>
+  <li>Electronics & Communication Engineering(ECE)</li>
+  <li>Electrical & Electronics Engineering(EEE)</li>
+  <li>mechanical Engineering</li>
+  <li>Information Technology(IT)</li>
+  <li>Artifical Intelligance & Data Science (AI & DS)</li>
+  <li>Electrical & Computer Engineering</li>
+  <li>Artificial Intelligence & Machine Learning (AI & ML)</li>
+  </ul></p>
+</div>
+<div id="vision" class="content">
+<h1> Vission and Mission</h1>
+<p><h3>Our Vision</h3>
+To provide top class education to the community by achieving excellence in engineering education and mould world class engineers with competence, integrity and social commitment.
+<h3>Our Mission</h3>
+To provide the best faculty ,excellent infrastructure, commendable facilities for excellent academic ambiance to encourage research and development and to strengthen employability and campus placements.</p>
+</div>
+<div id="contact" class="content">
+<h1>Contact Us</h1>
+<p><h3>Address</h3>
+MEA Engineering College
+vengoor P>O, perinthalmanna
+malappuram District
+kerala-679325<br>
+<h3>Phone</h3>
+049330277558
++9108281987556<br>
+<h3>Email</h3>
+info@meaec.edu.in<br>
+</p>
+</div>
+</body>
+</html>

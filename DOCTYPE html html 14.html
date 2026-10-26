@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String and Math Functions</title>
+</head>
+<body>
+  <h1>Predefined Functions in JavaScript</h1>
+
+  <h2>String Object</h2>
+  <p>String functions in C are built-in library functions used to perform common operations on strings, such as copying, comparing, and concatenating. These functions are declared in the <string.h> header file.
+
+String functions simplify common string operations without requiring manual implementation.
+They are used for tasks such as finding string length, copying, concatenating, comparing, and searching strings.</p>
+
+  Enter a string: <input type="text" id="txt">
+  <button onclick="stringFunctions()">Apply</button>
+  <div id="strOut"></div>
+
+  <h2>Math Object</h2>
+<p>C math functions are built-in functions provided by the C standard library to perform various mathematical operations like calculating square roots, powers, trigonometric values, logarithms, and more. These functions are defined in the math.h header file and save you from writing complex formulas manually. 
+
+Most math functions in C take one or two numeric inputs (usually float or double) and return the result after performing the calculation. For example, instead of writing the formula for square root yourself, you can simply use sqrt(number). This makes your code shorter, easier to understand, and less prone to errors.
+
+Using mathematical functions in C is like using a calculator. Instead of doing all the calculations manually on paper, you press a button and get the result instantly. Similarly, in programming, you call a math function and get the answer right away without writing the full logic behind it.</p>
+
+  Enter a number: <input type="number" id="num">
+  <button onclick="mathFunctions()">Apply</button>
+  <div id="mathOut"></div>
+
+  <script>
+    function stringFunctions() {
+      var s = document.getElementById("txt").value;
+      var out = "";
+      out += "Length: " + s.length + "<br>";
+      out += "Uppercase: " + s.toUpperCase() + "<br>";
+      out += "Lowercase: " + s.toLowerCase() + "<br>";
+      out += "First character: " + s.charAt(0) + "<br>";
+      out += "Last character: " + s.charAt(s.length - 1) + "<br>";
+      out += "Reversed: " + s.split("").reverse().join("") + "<br>";
+      document.getElementById("strOut").innerHTML = out;
+    }
+
+    function mathFunctions() {
+      var n = parseFloat(document.getElementById("num").value);
+      var out = "";
+      out += "Round: " + Math.round(n) + "<br>";
+      out += "Ceil: " + Math.ceil(n) + "<br>";
+      out += "Floor: " + Math.floor(n) + "<br>";
+      out += "Square root: " + Math.sqrt(n) + "<br>";
+      out += "Power (n^2): " + Math.pow(n, 2) + "<br>";
+      document.getElementById("mathOut").innerHTML = out;
+    }
+  </script>
+</body>
+</html>
